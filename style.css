@@ -1,0 +1,222 @@
+body{
+    background-color: #0c1734;
+    font-family: "Titillium Web", sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+/* Stars Background Attempt
+.space{
+    height: 100vh;
+    z-index: -2;
+}
+.space span{
+    position: absolute;
+}
+*/
+
+
+/* Main Menu */
+.menu-planets{
+    position: absolute;
+    z-index: -1;
+}
+
+.menu-planets .sun{
+    transform: translate(-50%, -20px);
+}
+
+.menu-planets .mercury{
+    transform: translate(100px, -250px);
+}
+
+.menu-planets .venus{
+    transform: translate(100px, -250px);
+}
+.menu-planets .earth{
+    transform: translate(100px, -250px);
+}
+
+.menu-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+.menu-page h1{
+    font-weight: normal;
+    color: antiquewhite;
+    margin-bottom: 150px;
+}
+.menu-page button{
+    margin-top: 150px;
+    font-size: 18px;
+    color: antiquewhite;
+    padding: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: transparent;
+    border: solid;
+    border-color: #4b77f0;
+    border-radius: 10px;
+    transition: border-radius 0.2s ease-in;
+}
+
+.menu-page button:hover{
+    border-color: #a1b7f3;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: border-radius 0.2s ease-in;
+}
+
+/* Planet Gallery */
+.container{
+    display: none;
+    justify-content: space-between;
+    height: 75vh;
+}
+
+.container button{
+    font-size: 50px;
+    border: none;
+    border-radius: 200px;
+    color: white;
+    background-color: transparent;
+    transition: color 0.2s ease-in;
+}
+
+.container button:hover{
+    cursor: pointer;
+    color: #1f56eb;
+    transition: color 0.2s ease-in;
+}
+
+.container .focus-planet {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+.container .focus-planet:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.container .focus-planet img{
+    width: auto;
+    height: 100%;
+}
+
+.container .focus-planet img:hover{
+    cursor: pointer;
+}
+
+.planet-name{
+    display: none;
+    justify-content: center;
+}
+
+.planet-name h2{
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+/* Planet Information */
+
+.planet-info{
+    display: none;
+}
+
+.planet-info button{
+    font-size: 18px;
+    color: antiquewhite;
+    padding: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: transparent;
+    border: solid;
+    border-color: #4b77f0;
+    border-radius: 10px;
+    transition: border-radius 0.2s ease-in;
+}
+.planet-info button:hover{
+    border-color: #a1b7f3;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: border-radius 0.2s ease-in;
+}
+ 
+.planet-header{
+    display: flex;
+    justify-content: center;
+}
+.planet-header h2{
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.planet-content{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.planet-content img{
+    width: 100%;
+    height: auto;
+}
+
+.planet-content p{
+    margin-right: 75px;
+    margin-left: 75px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 24px;
+}
+
+/* mobile */
+@media (max-width: 1300px) {
+    .menu-planets .earth {display: none;}
+}
+@media (max-width: 1125px) {
+    .menu-planets .venus {display: none;}
+}
+
+@media (max-width: 950px) {
+    .menu-planets .mercury {display: none;}
+    .menu-page button {background-color: #4b77f0;}
+    .menu-page h1 {
+        background-color: #0c1734;
+        padding: 10px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 650px){
+    .container .focus-planet img{
+        width: auto;
+        height: 72%;
+        padding-top: 50px;
+    }
+    .container .focus-planet img {
+        width: auto;
+        height: 72%;
+        padding-top: 50px;
+    }
+    .container button{
+        padding-top: 200px;
+    }
+
+    .container .focus-planet:active{
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+    }
+    .planet-info .planet-content p{
+        font-size: medium;
+    }
+}

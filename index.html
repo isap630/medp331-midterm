@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Meet the Planets</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--<div class = "space"></div>!-->
+    <audio class = "music" loop>
+        <source src="audio_files/luminance-tranquilium.mp3">
+    </audio>
+    <audio class = "sparkle">
+        <source src="audio_files/sparkle.wav">
+    </audio>
+
+    <!--Intro Screen-->
+    <div class="menu-planets">
+        <img class="sun" src="images/sun.png" width="750px">
+        <img class="mercury" src="images/mercury.png" width="175px">
+        <img class="venus" src="images/venus.png" width="175px">
+        <img class="earth" src="images/earth.png" width="175px">
+    </div>
+    
+    <div class="menu-page">
+        <h1>Meet the Planets</h1>
+        <button class="start-button">Start</button>
+    </div>
+
+    
+
+    <!--Gallery Screen-->
+    <div class="container">
+        <button class="left-btn"><i class="fa fa-chevron-left"></i></button>
+        <div class="focus-planet"></div>
+        <button class="right-btn"><i class="fa fa-chevron-right"></i></button>
+            
+    </div>
+    
+    <div class="planet-name">
+        <h2>Sun</h2>
+    </div>
+    
+    <!--Planet Info-->
+    <div class="planet-info">
+        <button id="back"><i class="fa fa-chevron-left"></i>  Back to Planets</button>
+        <div class="planet-header">
+        </div>
+        <div class="planet-content">
+        </div>
+
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+</body>
+</html>
